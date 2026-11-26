@@ -3,32 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume - Contact</title>
+  <title>Contact | Muhammad Ilyas bin Mohamad Sofi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
+<header class="hero">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Ilyas Sofi</a>
+    <div class="links">
       <a href="index.html">Home</a>
       <a href="hobbies.html">Hobbies</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
-    <h1>Contact Me</h1>
-  </header>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </div>
+  </nav>
+  <div class="hero-grid">
+    <h1 class="rise">Contact Me</h1>
+  </div>
+</header>
 
-  <main>
-    <section>
-      <h2>Get in Touch</h2>
-      <ul>
-        <li><strong>Email:</strong> <a href="mailto:ilyassofi67@gmail.com">ilyassofi67@gmail.com</a></li>
-        <li><strong>GitHub:</strong> <a href="https://github.com/yasviell" target="_blank">github.com/yasviell</a></li>
-        <li><strong>Location:</strong> Sungai Petani, Kedah, Malaysia</li>
-      </ul>
-    </section>
-  </main>
+<main>
+  <section>
+    <h2>Get in Touch</h2>
 
-  <footer>
-    <p>&copy; 2026 MUHAMMAD ILYAS BIN MOHAMAD SOFI</p>
-  </footer>
+    <div class="contact-row">
+      <span class="label">Email</span>
+      <a class="email" href="mailto:ilyassofi67@gmail.com">ilyassofi67@gmail.com</a>
+      <button class="copy" type="button" data-copy="ilyassofi67@gmail.com">Copy email</button>
+    </div>
+
+    <div class="contact-row">
+      <span class="label">GitHub</span>
+      <a href="https://github.com/yasviell" target="_blank" rel="noopener">github.com/yasviell</a>
+    </div>
+
+    <div class="contact-row">
+      <span class="label">Location</span>
+      <span>Sungai Petani, Kedah, Malaysia</span>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Muhammad Ilyas bin Mohamad Sofi</p>
+</footer>
+
+<script>
+  document.querySelectorAll("[data-copy]").forEach((btn) => {
+    const label = btn.textContent;
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.copy);
+        btn.textContent = "Copied";
+      } catch {
+        btn.textContent = "Select the address instead";
+      }
+      btn.dataset.done = "";
+      setTimeout(() => {
+        btn.textContent = label;
+        delete btn.dataset.done;
+      }, 2000);
+    });
+  });
+</script>
 </body>
 </html>
