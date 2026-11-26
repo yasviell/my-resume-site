@@ -1,108 +1,128 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume - Home</title>
+  <title>Muhammad Ilyas bin Mohamad Sofi | Resume</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html" class="active">Home</a>
+<header class="hero">
+  <nav class="site-nav">
+    <a class="brand" href="index.html">Ilyas Sofi</a>
+    <div class="links">
+      <a href="index.html" aria-current="page">Home</a>
       <a href="hobbies.html">Hobbies</a>
       <a href="contact.html">Contact</a>
-    </nav>
+    </div>
+  </nav>
 
-    <img src="profile.jpg" alt="Profile Photo" class="profile-img">
+  <div class="hero-grid">
+    <div class="rise">
+      <h1>Muhammad Ilyas bin Mohamad Sofi</h1>
+      <p class="tagline">Software Engineering Student | Web Development | Technology Enthusiast</p>
+    </div>
+    <figure class="portrait rise rise-2">
+      <img src="profile.jpg" alt="Portrait of Muhammad Ilyas bin Mohamad Sofi">
+    </figure>
+  </div>
+</header>
 
-    <h1>Muhammad Ilyas bin Mohamad Sofi </h1>
-    <p>Software Engineering Student | Web Development | Technology Enthusiast</p>
-  </header>
+<main>
+  <section>
+    <h2>About Me</h2>
+    <p class="lede">
+      I am an undergraduate Information Technology student at Universiti Utara Malaysia (UUM). I have a strong interest in software development, web technologies, and mobile application development. I enjoy learning new programming skills and developing practical projects to improve my technical knowledge and problem-solving abilities.
+    </p>
+  </section>
 
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>
-        I am an undergraduate Information Technology student at
-        Universiti Utara Malaysia (UUM). I have a strong interest
-        in software development, web technologies, and mobile
-        application development. I enjoy learning new programming
-        skills and developing practical projects to improve my
-        technical knowledge and problem-solving abilities.
-      </p>
-    </section>
+  <section>
+    <h2>Education</h2>
+    <ul class="timeline">
+      <li>
+        <span class="when">2024 – Present</span>
+        <strong>Bachelor of Science (Information Technology)</strong><br>
+        Universiti Utara Malaysia (UUM)
+      </li>
+      <li>
+        <span class="when">2023 – 2024</span>
+        <strong>Matriculation</strong><br>
+        Matriculation Programme
+      </li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li>
-          <strong>Bachelor of Science (Information Technology)</strong>
-          — Universiti Utara Malaysia (UUM)
-          (2024 – Present)
-        </li>
-        <li>
-          <strong>Matriculation</strong>
-          — Matriculation Programme
-          (2023 – 2024)
-        </li>
-      </ul>
-    </section>
+  <section>
+    <h2>Technical Skills</h2>
+    <ul class="tags">
+      <li>HTML5 &amp; CSS3</li>
+      <li>Java Programming</li>
+      <li>JavaScript</li>
+      <li>Flutter &amp; Dart</li>
+      <li>SQL &amp; Database Management</li>
+      <li>Git &amp; GitHub</li>
+      <li>Spring Boot (Basic)</li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>HTML5 &amp; CSS3</li>
-        <li>Java Programming</li>
-        <li>JavaScript</li>
-        <li>Flutter &amp; Dart</li>
-        <li>SQL &amp; Database Management</li>
-        <li>Git &amp; GitHub</li>
-        <li>Spring Boot (Basic)</li>
-      </ul>
-    </section>
+  <section>
+    <h2>Projects &amp; Experience</h2>
+    <ul class="projects">
+      <li>
+        <h3>LectureNote AI</h3>
+        <p>Conceptualized a mobile application for recording lectures, converting audio into notes, and organizing learning materials.</p>
+      </li>
+      <li>
+        <h3>Wildlife Map Malaysia</h3>
+        <p>Worked on the user interface development of a Flutter-based mobile application.</p>
+      </li>
+      <li>
+        <h3>Course Registration Improvement</h3>
+        <p>Participated in a university project focused on improving the UUM course registration system.</p>
+      </li>
+      <li>
+        <h3>Calculator Website</h3>
+        <p>Developed a web-based calculator project using modern web technologies.</p>
+      </li>
+    </ul>
+  </section>
 
-    <section>
-      <h2>Projects &amp; Experience</h2>
-      <ul>
-        <li>
-          <strong>LectureNote AI</strong> — Conceptualized a mobile
-          application for recording lectures, converting audio
-          into notes, and organizing learning materials.
-        </li>
-        <li>
-          <strong>Wildlife Map Malaysia</strong> — Worked on the
-          user interface development of a Flutter-based mobile
-          application.
-        </li>
-        <li>
-          <strong>Course Registration Improvement</strong> —
-          Participated in a university project focused on
-          improving the UUM course registration system.
-        </li>
-        <li>
-          <strong>Calculator Website</strong> — Developed a
-          web-based calculator project using modern web technologies.
-        </li>
-      </ul>
-    </section>
+  <section>
+    <h2>Personal Interests</h2>
+    <ul class="tags">
+      <li>Software and Application Development</li>
+      <li>Artificial Intelligence</li>
+      <li>Computer Hardware and Technology</li>
+      <li>Web Development</li>
+      <li>Learning New Programming Languages</li>
+    </ul>
+  </section>
+</main>
 
-    <section>
-      <h2>Personal Interests</h2>
-      <ul>
-        <li>Software and Application Development</li>
-        <li>Artificial Intelligence</li>
-        <li>Computer Hardware and Technology</li>
-        <li>Web Development</li>
-        <li>Learning New Programming Languages</li>
-      </ul>
-    </section>
-  </main>
+<footer>
+  <p>&copy; 2026 Muhammad Ilyas bin Mohamad Sofi</p>
+</footer>
 
-  <footer>
-    <p>&copy; 2026 Ilyas Sofi</p>
-  </footer>
+<script>
+  (() => {
+    const hero = document.querySelector(".hero");
+    const portrait = document.querySelector(".portrait img");
+    const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!hero || !portrait || still || !matchMedia("(pointer: fine)").matches) return;
+
+    hero.addEventListener("pointermove", (e) => {
+      const r = hero.getBoundingClientRect();
+      const x = (e.clientX - r.left) / r.width - 0.5;
+      const y = (e.clientY - r.top) / r.height - 0.5;
+      portrait.style.transform = `scale(1.04) translate(${x * 14}px, ${y * 10}px)`;
+    });
+    hero.addEventListener("pointerleave", () => {
+      portrait.style.transform = "";
+    });
+  })();
+</script>
 </body>
 </html>
-```
